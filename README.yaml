@@ -24,7 +24,9 @@ badges:
 
 #  description of this project
 description: |-
-  This terraform module is designed to generate consistent label names and tags for resources. You can use terraform-labels to implement a strict naming convention.
+  This terraform module is designed to generate consistent label names and
+  tags for resources. You can use terraform-labels to implement a strict
+  naming convention.
 
 # extra content
 include:
@@ -35,8 +37,9 @@ usage : |-
   ### Simple Example
   Here is an example of how you can use this module in your inventory structure:
   ```hcl
+  # Github = git::https://github.com
       module "label" {
-      source      = "git::https://github.com/clouddrove/terraform-labels.git?ref=tags/0.13.0"
+      source      = "[Github]/clouddrove/terraform-labels.git?ref=tags/0.13.0"
       name        = "labels"
       application = "clouddrove"
       environment = "test"
